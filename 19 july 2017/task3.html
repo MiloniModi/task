@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+<div>
+	<label> Input </label>
+	<input class="w3-input w3-border" id="task1" type="text">
+	<br>
+	<button onclick="submit()"> Submit </button>
+
+</div>
+<div id="view">
+	
+</div>
+<script>
+
+	
+
+	var arr=[];
+	var view = document.getElementById("view");
+	
+	function submit()
+	{
+		var x;
+		x = task1.value;
+
+		arr.push(x);
+		display();
+		document.getElementById("task1").value = "";
+
+		console.log(arr);
+	}
+	function display()
+	{
+		view.innerHTML = '';
+		for(i=0;i<arr.length;i++)
+		{
+			view.innerHTML=view.innerHTML + '<li>' +arr[i] + '<button onclick=del('+i+')> delete</button></li>';
+		}
+	}
+	function del(index)
+	{
+		arr.splice(index,1);
+		display();
+		
+	}
+</script>
+</body>
+</html>

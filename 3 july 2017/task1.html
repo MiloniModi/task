@@ -1,0 +1,178 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+	@media screen and (max-width: 600px){
+		.desktop-menu{
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 600px){
+		.mobile-menu{
+			display: none;
+		}
+	}
+</style>
+
+<body>
+	<div>
+		<div class="w3-row w3-black" style="display: flex;">
+			<div class="w3-col l6">
+				<img src="C:\Users\user\Downloads\logo3.png" class="w3-image" height="674.48px" width="156px">
+			</div>
+			<div class="w3-col l6 w3-bar w3-padding-64 desktop-menu w3-hide-small" 
+				style="height: 100px; width: auto;">
+				<div>
+					<a href="#" class="w3-bar-item w3-button"> Home </a> 
+					<a href="#" class="w3-bar-item w3-button"> About </a>
+					<a href="#" class="w3-bar-item w3-button"> Contact </a>
+				</div>
+			</div>
+
+			<div class="w3-row mobile-menu">
+				<div class="w3-col s2">
+					 <button class="w3-button w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+					</div>
+
+				<div class="w3-sidebar w3-bar-block w3-collapse w3-light-grey w3-card-2 w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">About</a>
+  <a href="#" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+			</div>
+
+		</div>
+		<div class="w3-row w3-padding" style="height: 475px">
+			<div class="w3-col l8 w3-content w3-display-container">
+				<img class="mySlides w3-image" src="C:\Users\user\Downloads\s1.jpg" style="width: 100%;height: 100%;">
+				<img class="mySlides w3-image" src="C:\Users\user\Downloads\s2.jpg" style="width: 100%;height: 100%;">
+				<img class="mySlides w3-image" src="C:\Users\user\Downloads\s4.jpg" style="width: 100%;height: 100%;">
+
+				<button class="w3-button w3-black-opacity w3-display-left" onclick="plusDivs(-1)"> &#10094;</button>
+				<button class="w3-button w3-black-opacity w3-display-right" onclick="plusDivs(1)"> &#10095;</button>
+			</div>
+			<div class="w3-col l4 w3-padding">
+				<img src="C:\Users\user\Downloads\logos.jpg" class="w3-image">
+				<p class="w3-center w3-padding-32"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra lacus sed metus iaculis, ut ornare orci suscipit. Phasellus in nibh mauris. Morbi quis varius nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra lacus sed metus iaculis, ut ornare orci suscipit. Phasellus in nibh mauris. Morbi quis varius nisl.</p>
+			</div>
+		</div>
+		<div class="w3-row w3-padding">
+			<div class="w3-col l4 w3-padding-left w3-card w3-center">
+				<i class="fa fa-home fa-4x"></i>
+				<p> Home </p>
+				<p> Main page. </p>
+			</div>
+			
+			<div class="w3-col l4 w3-padding-left w3-card w3-center">
+				<i class="fa fa-plane fa-4x"></i>
+				<p> Airport </p>
+				<p>Route to local airport.</p>
+
+			</div>
+			<div class="w3-col l4 w3-padding-left w3-card w3-center">
+				<i class="fa fa-car fa-4x"></i>
+				<p> Car </p>
+				<p>Route to the garage.</p>
+
+			</div>
+		</div>
+		<div class="w3-row w3-padding">
+			<p class="w3-center"> <b> Gallery </b> </p>
+			<div class="w3-col l4 w3-padding-4 w3-center">
+				<img src="C:\Users\user\Downloads\g1.jpg" class="w3-image" style="width:60%;cursor:zoom-in;"
+				onclick="document.getElementById('modal1').style.display='block'">
+
+				<div id="modal1" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="C:\Users\user\Downloads\g1.jpg" style="width:100%">
+					</div>
+				</div>
+
+
+
+			</div>
+
+			<div class="w3-col l4 w3-padding-4 w3-center">
+				<img src="C:\Users\user\Downloads\g2.jpg" class="w3-image" style="width:60%;cursor:zoom-in;"
+				onclick="document.getElementById('modal2').style.display='block'">
+
+				<div id="modal2" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="C:\Users\user\Downloads\g2.jpg" style="width:100%">
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l4 w3-padding-4 w3-center">
+				<img src="C:\Users\user\Downloads\g3.jpg" height="263.39px" width="164.61px" class="w3-image" style="width:60%;cursor:zoom-in;"
+				onclick="document.getElementById('modal3').style.display='block'">
+
+				<div id="modal3" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="C:\Users\user\Downloads\g3.jpg" style="width:100%">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="w3-row w3-padding w3-black">
+			<div class="w3-col l2 w3-left w3-bar-block">
+				<a href="#" class="w3-bar-item"> Home </a>
+				<a href="#" class="w3-bar-item"> About </a>
+				<a href="#" class="w3-bar-item"> Contact </a>
+			</div>
+			<div class="w3-col l2 w3-right w3-bar-block">
+				Rao Infotect Pvt. Ltd. <br>
+				Rajkot, Gujarat, India <br>
+				<br>
+				<i class="fa fa-twitter-square" style="font-size:48px;color:red"></i>
+				<i class="fa fa-facebook-square" style="font-size:48px;color:red"></i>
+			</div>
+		</div>
+
+
+
+	</div>	
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+				}
+
+
+
+		function w3_open()
+		{
+			document.getElementById("mySidebar").style.display = "block";
+		}
+		function w3_close()
+		{
+			document.getElementById("mySidebar").style.display = "none";
+		}
+
+			</script>
+		</body>
+		</html>

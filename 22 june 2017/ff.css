@@ -1,0 +1,82 @@
+.logo{
+	width: 20%;
+	border: 1px solid black;
+	float: left;
+	display: inline;
+}
+.title{
+	text-align:center;
+	border: 1px solid black;
+	width: : 80%
+	float:right;
+}
+.settle{
+	overflow: hidden;
+	border: 1px solid black;
+}
+.one{
+	text-align: center;
+	width: 21.48%;
+	border: 1px solid black;
+	float: left;
+	margin-left: 52px;
+	border: 1px solid black;
+	
+	
+	
+}
+.two{
+	text-align: center;
+	width: 21.48%;
+	border: 1px solid black;
+	float: left;
+	margin-left: 52px;
+	
+}
+.three{
+	text-align: center;
+	width: 21.48%;
+	border: 1px solid black;
+	float: left;
+	
+	margin-left: 52px;
+}
+.four{
+	text-align: center;
+	width: 21.48%;
+	border: 1px solid black;
+	float: left;
+	margin-left: 0;
+	
+}
+.content{
+	width: 75%;
+	float: left;
+	border: 1px solid black;
+}
+.image{
+	width: 24.65%;
+	float: right;
+	border: 1px solid black;
+}
+.w3-center{
+	border: 1px solid black;
+	overflow: hidden;
+}
+.image1 {
+	float: left;
+	width:50%;
+	
+	display: inline;
+}
+.image2{
+	float: right;
+	width:50%;
+	
+}
+.text{
+	color: blue;
+	border:1px solid black;
+	text-align: center;
+
+}

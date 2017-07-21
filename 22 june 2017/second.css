@@ -1,0 +1,57 @@
+.first{
+	display: flex;
+	border: 1px solid black;
+}
+.head_txt{
+	background-color: pink;
+	text-align: center;
+	width:85%;
+}
+.head_img{
+	float: right;
+	width: 15%
+}
+.second{
+	display: flex;
+	border: 1px solid black;
+}
+.menu1{
+	font-weight: bold;
+	width:10%;
+}
+#bg_img{
+	background-image: url("Desert.jpg");
+	background-repeat:repeat;
+	padding: 20px;
+	width:90%;
+}
+.third{
+	display: flex;
+	border: 1px solid black;
+	
+}
+.img1{
+	
+	background-color: white;
+	padding-left: 20px;
+	padding-top: 15px;
+	width:33.3%;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+ 	 margin-bottom: 25px;
+}
+.txt{
+	text-align: center;
+	padding: 10px 20px;
+	
+}
+.fourth{
+	display: flex;
+	border: 1px solid black;
+}
+.details{
+	background-color: grey;
+	width:90%;
+}
+.btm_logo{
+	width:10%;
+}

@@ -1,0 +1,162 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+	body,h1,h2,h5,h6{
+		letter-spacing: 2px;
+		font-family:Times New Roman;
+	}
+</style>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-card-2 w3-padding-4 w3-white">
+
+			<a href="#" class="w3-bar-item w3-button">Gourmet au Catering</a>
+			<div class="w3-col l3  w3-right w3-bar w3-hide-small">
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#menu" class="w3-bar-item w3-button">Menu</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+	<div class="w3-row" >
+		<div class="w3-display-container w3-col l12" style="height: 100%;">
+			<img src="hamburger.jpg" class="w3-image w3-padding-small" style="width:auto,height:100%;">
+			<div class="w3-padding w3-display-bottomleft w3-text-grey w3-hide-small"> 
+				<h2>Le Catering</h2>
+			</div>
+			<div class="w3-row">
+	<div class="w3-sidebar w3-col s1 w3-bar-block w3-collapse w3-card-2 w3-animate-right w3-grey" style="width:200px;right:0;" id="mySidebar">
+  		<button class="w3-bar-item w3-button w3-large w3-hide-large w3-black" onclick="w3_close()">Close &times;</button>
+  		<a href="#about" class="w3-bar-item w3-button">About</a>
+  		<a href="#menu" class="w3-bar-item w3-button">Menu</a>
+  		<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+		</div>
+	</div>
+		<button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+		</div>
+	</div>
+
+
+	<div class="w3-row" style="display: flex;" id="about">
+		<div class="w3-col l6"> 
+			<img src="tablesetting2.jpg" class="w3-image w3-hide-small w3-center w3-padding-large" height="800px" width="900px">
+		</div>
+		<div class="w3-col l6 s12 w3-padding-large">
+			<h1 class="w3-center"> About Catering </h1>
+			<br> 
+			<br>
+			<h6 class="w3-center"> Tradition since 1889 </h6>
+			<br>
+			<p> The Catering was founded in blabla by Mr. Smith in lorem ipsum <br> dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in<br> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br> pariatur.We only use seasonal ingredients. 
+			</p>
+			<p class="w3-text-grey w3-padding-16"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui<br> officia deserunt mollit anim id est laborum consectetur adipiscing<br> elit, sed do eiusmod temporincididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+	</div>
+	<hr>
+	<div class=" w3-row" style="display: flex;" id="menu">
+		<div class="w3-col l6 s12 w3-padding-large w3-left">
+			<h1 class="w3-center"> Our Menu </h1>
+			<br>
+			<br>
+			<h5> Bread Basket </h6> 
+
+				<p class="w3-text-grey w3-left"> Assortment of fresh baked fruit breads and muffins 5.50 </p>
+				<br>
+				<br>
+				<h5> Honey Almond Granola with Fruits </h6>	
+
+					<p class="w3-text-grey w3-left"> Natural cereal of honey toasted oats, raisins, almonds and dates
+						7.00 </p>
+						<br>
+						<br>
+						<h5> Belgian Waffle </h6>
+
+							<p class="w3-text-grey w3-left"> Vanilla flavored batter with malted flour 7.50 </p>
+							<br>
+							<br>
+							<h5> Scrambled eggs </h6>
+
+								<p class="w3-text-grey w3-left"> Scrambled eggs, roasted red pepper and garlic, with green onions
+									7.50 </p>
+									<br>
+									<br>
+									<h5> Blueberry Pancakes </h6>
+
+										<p class="w3-text-grey w3-left"> With syrup, butter and lots of berries 8.50 </p>
+									</div>
+
+									<div class="w3-col l6 w3-padding-large w3-right">
+										<img src="tablesetting3.jpg" class="w3-image w3-hide-small w3-padding-4">
+		</div>
+	</div>
+	<hr>
+								<div class="w3-row w3-padding-large" id="contact">
+									<div class="w3-col l6">
+										<h1 class="w3-center"> Contact </h1>
+									</div>
+									<div class="w3-col l12 s12 w3-padding-large">
+										<br>
+										<br>
+										<p> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+										</p>
+
+										<p class="w3-text-grey"> <b> Catering Service, 42nd Living St, 43043 New York, NY </b> </p>
+										<p> You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+										</p>
+										<form class="w3-container">
+											<p>      
+												<label class="w3-text-grey">Name</label>
+												<input class="w3-input" name="first" type="text">
+											</p>
+											<p>      
+												<label class="w3-text-grey">How many people</label>
+												<input class="w3-input" name="people" type="text">
+											</p>
+											<p>
+												<input class="w3-input" type="datetime-local" placeholder="Date and time" required name="date" 
+												value="2017-11-16T20:00">
+											</p>
+											<p>
+												<label class="w3-text-grey">Message\Special Requirements</label>
+												<input class="w3-input" name="msg" type="text">
+											</p>
+											<p>
+												<button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
+											</p>
+										</form>
+
+									</div>
+
+
+								</div>
+
+								<footer>
+									<div class="w3-padding-large" style="background-color: #D3D3D3">
+										<p class="w3-center"> Powered by <span style="text-decoration: underline;"> w3.css </span> </p>
+									</div>
+								</footer>
+
+								<script>
+							function w3_open() {
+    							document.getElementById("mySidebar").style.display = "block";
+								}
+							function w3_close() {
+    							document.getElementById("mySidebar").style.display = "none";
+								}
+								</script>
+
+
+
+
+							</body>
+							</html>
