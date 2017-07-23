@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="MyApp" ng-controller="ImgCtrl"> 
+	<div>
+		<img src="{{image}}">
+		<button ng-click="left">Left</button>
+		<button ng-click="right">Right</button>
+	</div>
+</body>
+<script>
+	var app=angular.module('MyApp',[]);
+	app.controller('ImgCtrl',function($scope){
+		$scope.image="s1.jpg";
+		var i = 0;
+		var images = ["s1.jpg","s2.jpg","s3.jpg","s4.jpg"];
+		$scope.left=function(){
+			if(i==0)
+			{
+				i = images.length-1;
+				$scope.image=images[i];
+			}
+			else{
+				i--;
+				$scope.image=images[i];
+			}
+		}
+		$scope.right=function(){
+			if(i==images.length-1){
+				i=0;
+				$scope.image=images[i];
+			}
+			else{
+				i++;
+				$scope.image=images[i];
+			}
+		}
+	})
+</script>
